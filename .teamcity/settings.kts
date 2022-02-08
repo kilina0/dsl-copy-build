@@ -97,7 +97,6 @@ object SubProjectB_SubProjectBA : Project({
     vcsRoot(SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit1)
     vcsRoot(SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit)
 
-    buildType(SubProjectB_SubProjectBA_Build_2)
     buildType(SubProjectB_SubProjectBA_Build)
 })
 
@@ -106,14 +105,6 @@ object SubProjectB_SubProjectBA_Build : BuildType({
 
     vcs {
         root(SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit)
-    }
-})
-
-object SubProjectB_SubProjectBA_Build_2 : BuildType({
-    name = "build (1)"
-
-    vcs {
-        root(SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit1)
     }
 })
 
