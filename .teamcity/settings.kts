@@ -94,8 +94,10 @@ object SubProjectB : Project({
 object SubProjectB_SubProjectBA : Project({
     name = "SubProjectBA"
 
+    vcsRoot(SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit1)
     vcsRoot(SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit)
 
+    buildType(SubProjectB_SubProjectBA_Build_2)
     buildType(SubProjectB_SubProjectBA_Build)
 })
 
@@ -107,8 +109,22 @@ object SubProjectB_SubProjectBA_Build : BuildType({
     }
 })
 
+object SubProjectB_SubProjectBA_Build_2 : BuildType({
+    name = "build (1)"
+
+    vcs {
+        root(SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit1)
+    }
+})
+
 object SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit : GitVcsRoot({
     name = "https://github.com/kilina0/sec_repos.git"
+    url = "https://github.com/kilina0/sec_repos.git"
+    branch = "refs/heads/master"
+})
+
+object SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit1 : GitVcsRoot({
+    name = "https://github.com/kilina0/sec_repos.git (1)"
     url = "https://github.com/kilina0/sec_repos.git"
     branch = "refs/heads/master"
 })
