@@ -45,7 +45,13 @@ project {
 
     subProject(SubProjectA)
     subProject(SubProjectB)
+    subProject(SshCheck)
 }
+
+
+object SshCheck : Project({
+    name = "ssh check"
+})
 
 
 object SubProjectA : Project({
