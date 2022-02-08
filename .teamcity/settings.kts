@@ -93,12 +93,4 @@ object SubProjectB : Project({
 
 object SubProjectB_SubProjectBA : Project({
     name = "SubProjectBA"
-
-    vcsRoot(SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit)
-})
-
-object SubProjectB_SubProjectBA_HttpsGithubComKilina0secReposGit : GitVcsRoot({
-    name = "https://github.com/kilina0/sec_repos.git"
-    url = "https://github.com/kilina0/sec_repos.git"
-    branch = "refs/heads/master"
 })
