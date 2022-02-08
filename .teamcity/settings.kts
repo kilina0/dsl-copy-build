@@ -78,7 +78,7 @@ object SubProjectA_SubProjectAB_Build : BuildType({
 })
 
 object SubProjectA_SubProjectAB_HttpsGithubComKilina0secReposGit : GitVcsRoot({
-    name = "https://github.com/kilina0/sec_repos.git"
+    name = "rootY"
     url = "https://github.com/kilina0/sec_repos.git"
     branch = "refs/heads/master"
 })
